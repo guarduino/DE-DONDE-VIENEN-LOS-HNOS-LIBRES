@@ -2,45 +2,12 @@
 <html lang="es">
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>De Donde Vienen Los Hnos Libres</title>
-	<style type="text/css">body {
-            font-family:'Times New Roman', Times, serif;
-           *font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 10px;
+	
 
-        }
 
-        .contenido-texto {
-            max-width: 360px;
-            min-width: 100px
-            margin: 0 auto;
-            padding: 10px;
-            background-color: #ffffff;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            box-sizing: border-box;
-        }
-
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-
-        p {
-            text-align: justify;
-            margin-bottom: 10px;
-            color: #555;
-        }
-	</style>
-</head>
-<body>&nbsp;
-
-	 <button style="width: 200px; height: 50px;background-color: yellow;font-size: 16px;" onclick="leerEnVozAlta()">Presionar para Leer en Voz Alta</button>
-
-<div class="contenido-texto">
-<h3>&quot;Qu&eacute; son los &quot;Hermanos de Plymouth&quot; o &quot;Hermanos Libres&quot;?</h3>
+<h3>&quot;Qué son los &quot;Hermanos de Plymouth&quot; o &quot;Hermanos Libres&quot;?</h3>
 <p><i>de Gustavo Uliarte.</i></p>
-<p><u>S&iacute;ntesis:</u></p>
+<p><u>Síntesis:</u></p>
 
 <p>El grupo conocido como los "Hermanos de Plymouth" o "Hermanos Libres" fue fundado en el siglo XIX. Uno de los principales fundadores y figuras prominentes de este movimiento fue <b>John Nelson Darby</b>. Darby, un ex clérigo anglicano, fue fundamental en la formación y desarrollo de este grupo, que surgió alrededor de la década de 1830 en Dublín, <b> Irlanda</b>. El movimiento de los Hermanos de Plymouth se caracterizó por su énfasis en la interpretación literal de la Biblia, la independencia de las congregaciones locales, y la práctica de no tener un clero formal enfatizando en su lugar el sacerdocio de todos los creyentes ,basado en pasajes bíblicos como 1 Pedro 2:.9, que describe a los cristianos como "un sacerdocio real".<br><br>
 	Un elemento central en sus reuniones era la celebración semanal de la Cena del Señor, que también se realizaba sin una figura central o pastor que dirigiera el servicio. Esto reflejaba su enfoque en la igualdad de los creyentes.<br>
@@ -71,31 +38,5 @@
 <p>En resumen, aunque ciertos elementos del premilenialismo tienen antecedentes en la historia cristiana temprana, el dispensacionalismo como sistema teol&oacute;gico es una construcci&oacute;n relativamente moderna. Ambos conceptos, en sus formas contempor&aacute;neas, se han desarrollado a partir de una combinaci&oacute;n de interpretaciones b&iacute;blicas, influencias teol&oacute;gicas y desarrollos hist&oacute;ricos que se consolidaron especialmente en el siglo XIX.</p>
 </div>
 	<a href="https://labibliateca.github.io/main/"><mark>PAGINA PRINCIPAL</mark>
-<script>
-     function leerEnVozAlta() {
-    // Obtener el texto del elemento con la clase "contenido-texto"
-    var texto = document.querySelector('.contenido-texto').innerText;
-
-    // Dividir el texto en segmentos más pequeños
-    var partes = dividirTextoEnPartes(texto, 100); // Por ejemplo, 200 caracteres por parte
-
-    // Leer cada parte secuencialmente
-    partes.forEach((parte) => {
-        var mensaje = new SpeechSynthesisUtterance(parte);
-        mensaje.lang = 'es-ES';
-        mensaje.pitch = 1;
-        mensaje.rate = 1;
-        window.speechSynthesis.speak(mensaje);
-    });
-}
-
-function dividirTextoEnPartes(texto, tamano) {
-    var partes = [];
-    for (var i = 0; i < texto.length; i += tamano) {
-        partes.push(texto.slice(i, i + tamano));
-    }
-    return partes;
-}
-
-    </script></body>
+</body>
 </html>
